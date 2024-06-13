@@ -1,0 +1,422 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPRgTKqEPTebQeyvv9+cyDy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sudheerbmb/IT/blob/main/DS.pynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lKwvE9__Lodw",
+        "outputId": "4836c659-10ed-4f15-d8e2-86e08c6b8df3"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ],
+      "source": [
+        "x = []\n",
+        "y = list()\n",
+        "z = [1, 2, 3]\n",
+        "a = list(\"hello\")\n",
+        "b = [i for i in range(10)]\n",
+        "c = list(range(10))\n",
+        "d = [0] * 5\n",
+        "e = [1, 2, 3] + [4, 5, 6]\n",
+        "f = []\n",
+        "f.append(1)\n",
+        "f.append(2)\n",
+        "f.append(3)\n",
+        "g = []\n",
+        "g.extend([1, 2, 3])\n",
+        "h = []\n",
+        "h.insert(0, 1)\n",
+        "h.insert(1, 2)\n",
+        "h.insert(2, 3)\n",
+        "i = []\n",
+        "i.clear()\n",
+        "j = [1, 2, 3]\n",
+        "j.pop()\n",
+        "k = [1, 2, 3]\n",
+        "k.remove(2)\n",
+        "l = [3, 1, 2]\n",
+        "l.sort()\n",
+        "m = [1, 2, 3]\n",
+        "m.reverse()\n",
+        "n = [1, 2, 2, 3]\n",
+        "count_2 = n.count(2)\n",
+        "o = [1, 2, 3]\n",
+        "index_of_2 = o.index(2)\n",
+        "p = [1, 2, 3]\n",
+        "p.extend([4, 5])\n",
+        "q = [1, 2, 3]\n",
+        "r = q.copy()\n",
+        "s = [1, 2, 3]\n",
+        "t = s * 2\n",
+        "u = [1, 2, 3]\n",
+        "v = u[:2]\n",
+        "w = [1, 2, 3]\n",
+        "w.sort(reverse=True)\n",
+        "x1 = [1, 2, 3]\n",
+        "x1.clear()\n",
+        "y1 = [1, 2, 3]\n",
+        "del y1[1]\n",
+        "z1 = [1, 2, 3, 4, 5]\n",
+        "sublist = z1[1:4]\n",
+        "a1 = [1, 2, 3, 4, 5]\n",
+        "a1[2] = 6\n",
+        "b1 = [1, 2, 3]\n",
+        "b1.extend([4, 5, 6])\n",
+        "c1 = [1, 2, 3]\n",
+        "c1.insert(1, 9)\n",
+        "d1 = [1, 2, 3, 4]\n",
+        "d1.reverse()\n",
+        "e1 = [1, 2, 3, 4]\n",
+        "e1.pop(2)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = []\n",
+        "y = list()\n",
+        "z = [1, 2, 3]\n",
+        "a = list(\"hello\")\n",
+        "b = [i for i in range(10)]\n",
+        "c = list(range(10))\n",
+        "d = [0] * 5\n",
+        "e = [1, 2, 3] + [4, 5, 6]\n",
+        "f = []\n",
+        "f.append(1)\n",
+        "f.append(2)\n",
+        "f.append(3)\n",
+        "g = []\n",
+        "g.extend([1, 2, 3])\n",
+        "h = []\n",
+        "h.insert(0, 1)\n",
+        "h.insert(1, 2)\n",
+        "h.insert(2, 3)\n",
+        "i = []\n",
+        "i.clear()\n",
+        "j = [1, 2, 3]\n",
+        "j.pop()\n",
+        "k = [1, 2, 3]\n",
+        "k.remove(2)\n",
+        "l = [3, 1, 2]\n",
+        "l.sort()\n",
+        "m = [1, 2, 3]\n",
+        "m.reverse()\n",
+        "n = [1, 2, 2, 3]\n",
+        "count_2 = n.count(2)\n",
+        "o = [1, 2, 3]\n",
+        "index_of_2 = o.index(2)\n",
+        "p = [1, 2, 3]\n",
+        "p.extend([4, 5])\n",
+        "q = [1, 2, 3]\n",
+        "r = q.copy()\n",
+        "s = [1, 2, 3]\n",
+        "t = s * 2\n",
+        "u = [1, 2, 3]\n",
+        "v = u[:2]\n",
+        "w = [1, 2, 3]\n",
+        "w.sort(reverse=True)\n",
+        "x1 = [1, 2, 3]\n",
+        "x1.clear()\n",
+        "y1 = [1, 2, 3]\n",
+        "del y1[1]\n",
+        "z1 = [1, 2, 3, 4, 5]\n",
+        "sublist = z1[1:4]\n",
+        "a1 = [1, 2, 3, 4, 5]\n",
+        "a1[2] = 6\n",
+        "b1 = [1, 2, 3]\n",
+        "b1.extend([4, 5, 6])\n",
+        "c1 = [1, 2, 3]\n",
+        "c1.insert(1, 9)\n",
+        "d1 = [1, 2, 3, 4]\n",
+        "d1.reverse()\n",
+        "e1 = [1, 2, 3, 4]\n",
+        "e1.pop(2)\n"
+      ],
+      "metadata": {
+        "id": "aPTWQWRW8Ebu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def reverse_string(input_string):\n",
+        "    return input_string[::-1]\n",
+        "\n",
+        "input_string = \"python\"\n",
+        "reversed_string = reverse_string(input_string)\n",
+        "print(f\"Reversed string of '{input_string}': {reversed_string}\")\n",
+        "\n",
+        "def factorial(n):\n",
+        "    if n == 0 or n == 1:\n",
+        "        return 1\n",
+        "    else:\n",
+        "        return n * factorial(n - 1)\n",
+        "\n",
+        "number = 5\n",
+        "fact = factorial(number)\n",
+        "print(f\"Factorial of {number}: {fact}\")\n",
+        "\n",
+        "numbers = [12, 45, 78, 23, 56, 9]\n",
+        "max_number = max(numbers)\n",
+        "print(f\"Maximum number in list {numbers}: {max_number}\")\n"
+      ],
+      "metadata": {
+        "id": "ItClFkWkBViJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = set()\n",
+        "y = {1, 2, 3}\n",
+        "z = set([1, 2, 3])\n",
+        "a = set(\"hello\")\n",
+        "b = {i for i in range(10)}\n",
+        "c = {1, 2, 3}\n",
+        "c.add(4)\n",
+        "d = {1, 2, 3}\n",
+        "d.update([4, 5, 6])\n",
+        "e = {1, 2, 3}\n",
+        "e.remove(2)\n",
+        "f = {1, 2, 3}\n",
+        "f.discard(2)\n",
+        "g = {1, 2, 3}\n",
+        "g.pop()\n",
+        "h = {1, 2, 3}\n",
+        "h.clear()\n",
+        "i = {1, 2, 3}\n",
+        "j = {3, 4, 5}\n",
+        "union_set = i.union(j)\n",
+        "intersection_set = i.intersection(j)\n",
+        "difference_set = i.difference(j)\n",
+        "symmetric_difference_set = i.symmetric_difference(j)\n",
+        "k = {1, 2, 3}\n",
+        "subset_check = k.issubset({1, 2, 3, 4})\n",
+        "l = {1, 2, 3, 4}\n",
+        "superset_check = l.issuperset({2, 3})\n",
+        "m = {1, 2, 3}\n",
+        "n = {3, 4, 5}\n",
+        "is_disjoint = m.isdisjoint(n)\n",
+        "o = {1, 2, 3}\n",
+        "p = o.copy()\n",
+        "q = {1, 2, 3}\n",
+        "q.update([4, 5])\n",
+        "r = {1, 2, 3}\n",
+        "r.symmetric_difference_update({3, 4, 5})\n",
+        "s = {1, 2, 3}\n",
+        "s.intersection_update({2, 3, 4})\n",
+        "t = {1, 2, 3}\n",
+        "t.difference_update({2, 3})\n"
+      ],
+      "metadata": {
+        "id": "eotOQ8aj8SdM"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = {}\n",
+        "y = dict()\n",
+        "z = {'a': 1, 'b': 2, 'c': 3}\n",
+        "a = dict(a=1, b=2, c=3)\n",
+        "b = dict([('a', 1), ('b', 2), ('c', 3)])\n",
+        "c = dict(zip(['a', 'b', 'c'], [1, 2, 3]))\n",
+        "d = {'a': 1, 'b': 2}\n",
+        "d['c'] = 3\n",
+        "e = {'a': 1, 'b': 2, 'c': 3}\n",
+        "e.update({'d': 4})\n",
+        "f = {'a': 1, 'b': 2, 'c': 3}\n",
+        "f['b'] = 5\n",
+        "g = {'a': 1, 'b': 2, 'c': 3}\n",
+        "del g['b']\n",
+        "h = {'a': 1, 'b': 2, 'c': 3}\n",
+        "h.pop('b')\n",
+        "i = {'a': 1, 'b': 2, 'c': 3}\n",
+        "i.clear()\n",
+        "j = {'a': 1, 'b': 2, 'c': 3}\n",
+        "k = j.copy()\n",
+        "l = {'a': 1, 'b': 2, 'c': 3}\n",
+        "m = l.keys()\n",
+        "n = l.values()\n",
+        "o = l.items()\n",
+        "p = {'a': 1, 'b': 2, 'c': 3}\n",
+        "q = p.get('a')\n",
+        "r = {'a': 1, 'b': 2, 'c': 3}\n",
+        "s = r.popitem()\n",
+        "t = {'a': 1, 'b': 2}\n",
+        "u = {'c': 3, 'd': 4}\n",
+        "v = {**t, **u}\n",
+        "w = {'a': 1, 'b': 2}\n",
+        "x1 = w.setdefault('c', 3)\n",
+        "y1 = {'a': 1, 'b': 2}\n",
+        "z1 = y1.fromkeys(['a', 'b', 'c'], 0)\n",
+        "a1 = {'a': 1, 'b': 2, 'c': 3}\n",
+        "a1.update({'d': 4, 'e': 5})\n"
+      ],
+      "metadata": {
+        "id": "Cm5GTGaq8dD9"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#LIbraryMS\n",
+        "library_catalog = []\n",
+        "\n",
+        "def add_book(title, author, genre):\n",
+        "    book = (title, author, genre)\n",
+        "    library_catalog.append(book)\n",
+        "    print(f\"Book addd: {title} by {author}\")\n",
+        "\n",
+        "def remove_book(title):\n",
+        "    for book in library_catalog:\n",
+        "        if book[0] == title:\n",
+        "            library_catalog.remove(book)\n",
+        "            print(f\"Book removd: {title}\")\n",
+        "            return\n",
+        "    print(f\"Book not fount: {title}\")\n",
+        "\n",
+        "def display_books():\n",
+        "    if not library_catalog:\n",
+        "        print(\"Library catalog is empt.\")\n",
+        "    else:\n",
+        "        print(\"Library catalog:\")\n",
+        "        for book in library_catalog:\n",
+        "            print(f\"Title: {book[0]}, Author: {book[1]}, Genre: {book[2]}\")\n",
+        "\n",
+        "def find_book(title):\n",
+        "    for book in library_catalog:\n",
+        "        if book[0] == title:\n",
+        "            return book\n",
+        "    print(f\"Book not fount: {title}\")\n",
+        "\n",
+        "add_book('The Guide', 'R. K. Narayan', 'Fiction')\n",
+        "add_book('The Namesake', 'Jhumpa Lahiri', 'Literature')\n",
+        "add_book('The Immortals of Meluha', 'Amish Tripathi', 'Fantasy')\n",
+        "\n",
+        "display_books()\n",
+        "\n",
+        "remove_book('The Namesake')\n",
+        "\n",
+        "book_found = find_book('The Immortals of Meluha')\n",
+        "if book_found:\n",
+        "    print(\"Book found:\")\n",
+        "    print(book_found)\n",
+        "\n",
+        "display_books()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "okJaQn2p-dgW",
+        "outputId": "86b9eea2-005c-43a8-f5b2-20a6474749dd"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Book addd: The Guide by R. K. Narayan\n",
+            "Book addd: The Namesake by Jhumpa Lahiri\n",
+            "Book addd: The Immortals of Meluha by Amish Tripathi\n",
+            "Library catalog:\n",
+            "Title: The Guide, Author: R. K. Narayan, Genre: Fiction\n",
+            "Title: The Namesake, Author: Jhumpa Lahiri, Genre: Literature\n",
+            "Title: The Immortals of Meluha, Author: Amish Tripathi, Genre: Fantasy\n",
+            "Book removd: The Namesake\n",
+            "Book found:\n",
+            "('The Immortals of Meluha', 'Amish Tripathi', 'Fantasy')\n",
+            "Library catalog:\n",
+            "Title: The Guide, Author: R. K. Narayan, Genre: Fiction\n",
+            "Title: The Immortals of Meluha, Author: Amish Tripathi, Genre: Fantasy\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "WOtj6LqoAxUL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Removing duplicates\n",
+        "def a(p):\n",
+        "  s=set(p)\n",
+        "  return s\n",
+        "print(list(a([1,1,2,3,4,5])  ))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XfR3059AATGa",
+        "outputId": "43a61f8d-3459-4229-a1a3-161a0ba902fa"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
