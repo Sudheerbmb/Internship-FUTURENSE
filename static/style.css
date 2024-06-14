@@ -1,0 +1,74 @@
+/* static/style.css */
+
+/* Style for chat container */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for chat messages */
+.chat-box {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f0f0f0; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for user message */
+.user-message {
+    background-color: #00adb5; /* Teal color */
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    max-width: 70%;
+    align-self: flex-end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Style for bot message */
+.bot-message {
+    background-color: #393e46; /* Dark gray color */
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    max-width: 70%;
+    align-self: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Style for input box */
+#user-input {
+    width: calc(100% - 70px);
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: #fff; /* White background */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Style for send button */
+button {
+    padding: 12px 24px;
+    background-color: #00adb5; /* Teal color */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007d7d; /* Darker teal color on hover */
+}
