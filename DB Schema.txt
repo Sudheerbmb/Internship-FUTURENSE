@@ -1,6 +1,7 @@
-CREATE DATABASE IF NOT EXISTS medicaldelivery;
-
-USE medicaldelivery;
+DROP TABLE IF EXISTS orders;
+DROP TABLE IF EXISTS cart;
+DROP TABLE IF EXISTS medicines;
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -25,14 +26,69 @@ CREATE TABLE cart (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     medicine_id INT NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES users(id),
-    FOREIGN KEY (medicine_id) REFERENCES medicines(id)
+    quantity INT NOT NULL CHECK (quantity > 0),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (medicine_id) REFERENCES medicines(id) ON DELETE CASCADE
 );
 
 CREATE TABLE orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     medicine_id INT NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES users(id),
-    FOREIGN KEY (medicine_id) REFERENCES medicines(id)
+    quantity INT NOT NULL CHECK (quantity > 0),
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (medicine_id) REFERENCES medicines(id) ON DELETE CASCADE
 );
+
+INSERT INTO medicines (name, price)
+VALUES ('Hydrochlorothiazide', 50.00),
+       ('Prednisone', 70.00),
+       ('Losartan', 55.00),
+       ('Levothyroxine', 65.00),
+       ('Atorvastatin', 80.00),
+       ('Clopidogrel', 45.00),
+       ('Fluoxetine', 90.00),
+       ('Warfarin', 85.00),
+       ('Simvastatin', 75.00),
+       ('Montelukast', 60.00),
+       ('Loratadine', 25.00),
+       ('Metoprolol', 40.00),
+       ('Furosemide', 50.00),
+       ('Gabapentin', 85.00),
+       ('Tramadol', 95.00),
+       ('Citalopram', 70.00),
+       ('Azithromycin', 120.00),
+       ('Doxycycline', 110.00),
+       ('Escitalopram', 105.00),
+       ('Albuterol', 130.00);
+
+
+
+
+
+The schema consists of four tables: users, medicines, cart, and orders.
+Users Table:
+The users table holds user information, with the id column serving as the primary key to uniquely identify each user. It includes columns for username, password, email, medical_condition, address, city, state, country, and postalcode. The username column is unique, ensuring no two users can have the same username.
+
+Medicine Table:
+The medicines table contains information about medicines, with the id column as the primary key. It includes name and price columns. 
+Cart Table:
+The cart table represents the shopping cart for users, with id as the primary key, and includes foreign keys user_id and medicine_id linking to the users and medicines tables, respectively. It also has a quantity column with a check constraint to ensure it is greater than zero.
+
+Orders Table:
+The orders table records user orders, with id as the primary key. It includes foreign keys user_id and medicine_id, linking to the users and medicines tables, respectively. The orders table also has a quantity column with a check constraint to ensure it is greater than zero, and an order_date column that defaults to the current timestamp when a new order is created.
+
+Integrity Constraints
+
+Domain Constraints:
+Ensures the data in a column adheres to a specific format. For example, the price column in the medicines table must be a decimal, and the quantity columns in both the cart and orders tables must be integers greater than zero.
+
+Entity Integrity Constraints:
+Ensures each table has a primary key and that the primary key is unique and not null. In this schema, the id columns in the users, medicines, cart, and orders tables serve as primary keys.
+
+Referential Integrity Constraints:
+Ensures foreign keys correctly reference primary keys in other tables. For instance, the user_id and medicine_id in the cart and orders tables are foreign keys that reference the id columns in the users and medicines tables, respectively. These constraints also enforce cascading deletions, meaning if a user or medicine is deleted, associated records in the cart and orders tables will also be deleted.
+
+User-defined Constraints:
+Additional constraints defined by the user to enforce business rules. In this schema, the quantity column in the cart and orders tables has a check constraint to ensure it is greater than zero
