@@ -1,6 +1,6 @@
 GitHub Repository for Futurense Internship(includes Daily practice topics)
 5th May: Introduction
-6th May: Python basics,loops,functions and created this GitHub Repository and learnt cmd commands for git
+6th May: Python basics,loops,functions and created this GitHub Repository and learnt cmd commands for git 
 7th May: Revised Python OOPS,Started with Flask and APIs
 8th May: Revised Inheritance in Python OOPS,Learnt Excpetion Handling,Created basic APIs in Flask using python,Tried to integrate with MySql(Failed Though)
 9th May: SUNDAY
