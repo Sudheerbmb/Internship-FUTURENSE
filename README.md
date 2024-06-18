@@ -1,2 +1,1 @@
-# IT
-Another Repository for my Usage...
+GitHub Repository for Futurense Internship(includes Daily practice topics)
