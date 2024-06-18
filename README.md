@@ -56,5 +56,7 @@
 - Meeting with the manager regarding the project
 - Received valuable modifications to be done
 - Working on the integration of my features with my fellow's features
+- Practiced DQL,Functions in MYSQL
+  
   
 
