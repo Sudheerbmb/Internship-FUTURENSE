@@ -47,6 +47,7 @@
 - SUNDAY
 
 ### 17th May
+- Studied DCL,DML commands in MYSQL and revised operators in MYSQL along with practice
 - Polished my features
 - Created APIs for admin and user dissemination
 - Thoroughly tested all features of mine
@@ -55,4 +56,5 @@
 - Meeting with the manager regarding the project
 - Received valuable modifications to be done
 - Working on the integration of my features with my fellow's features
+  
 
