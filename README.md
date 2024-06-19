@@ -57,6 +57,10 @@
 - Received valuable modifications to be done
 - Working on the integration of my features with my fellow's features
 - Practiced DQL,Functions in MYSQL
+### 19th May
+- Successfully integrated the individual works of our team
+- Practiced Joins in SQL and Normalization forms
+- Formulated final discussions for the submission of the assigned project
   
   
 
