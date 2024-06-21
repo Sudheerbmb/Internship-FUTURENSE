@@ -61,6 +61,15 @@
 - Successfully integrated the individual works of our team
 - Practiced Joins in SQL and Normalization forms
 - Formulated final discussions for the submission of the assigned project
+### 20th May
+- Added additional features to our project
+- revised Mysql concepts like complex joins and DateTime functions
+- Pushed Integrated work
+### 21st May
+- Integrated Medical chatBot to our project
+- Merged the updated project in the master branch
+- Practiced Stored Procedures and Cursors(THR) in MYSQL
+  
   
   
 
