@@ -69,6 +69,13 @@
 - Integrated Medical chatBot to our project
 - Merged the updated project in the master branch
 - Practiced Stored Procedures and Cursors(THR) in MYSQL
+### 22nd May
+- Coordinated with my team mates to integrate the whole work
+- looked after the pull requests and merging the code in GH
+- Tested the final copy of our project regarding the basic functionalities
+- Added necessary data into the database
+## 23rd May
+- SUNDAY
   
   
   
