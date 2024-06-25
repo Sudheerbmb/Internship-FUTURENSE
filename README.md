@@ -86,3 +86,8 @@
 - Revised PYTHON concepts for viva
 - Tried to test our project apis using POSTMAN
 - Learnt TCL commands,Views,Triggers in MySQL
+
+### 25th June
+- Learnt Numpy Library in python
+- Practiced several concepts of numpy arrays
+- practically done the efficiency of numpy arrays over python lists
