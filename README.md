@@ -91,3 +91,32 @@
 - Learnt Numpy Library in python
 - Practiced several concepts of numpy arrays
 - practically done the efficiency of numpy arrays over python lists
+
+### 26th June
+- Tested the project APIs using postman
+- Integrated a Machine Learning model in our project
+
+### 27th June
+- Learnt concepts of Pandas
+- Practiced Pandas hands-on
+- worked on final version of project
+
+### 28th June
+-  Prepared for viva and submission
+-  Submitted the project to Manager
+-  Took valuable advice on adding additional features to our project
+
+### 29th June
+- Formulated startegies and divide work for the amalgamation of additional features like (mail confirmation for orders,expansion of admin page,authorization using JWT tokens
+- Integrated Email confirmation features to our project on successfully ordering any medicine
+- Expanded admin page by adding necessary pages
+
+### 30th June
+- Worked on the integration of JWT tokens
+- Integrated the project with JWT tokens as additional feature
+- SUNDAY
+
+### 1st July
+- Revised concepts of Numpy,Pandas library
+- Learnt the concepts of Matplotlib
+- Did hands-on practice of Matplotlib
