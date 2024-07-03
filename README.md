@@ -107,7 +107,7 @@
 -  Took valuable advice on adding additional features to our project
 
 ### 29th June
-- Formulated startegies and divide work for the amalgamation of additional features like (mail confirmation for orders,expansion of admin page,authorization using JWT tokens
+- Formulated strategies and divide work for the amalgamation of additional features like (mail confirmation for orders,expansion of admin page,authorization using JWT tokens
 - Integrated Email confirmation features to our project on successfully ordering any medicine
 - Expanded admin page by adding necessary pages
 
@@ -124,4 +124,10 @@
 ### 2nd July
 - Learnt the concepts of Seaborn Library
 - Did hands-on practice of visualizations in Seaborn
+
+### 3rd July
+- Learnt how to handle null values
+- Practiced how to remove outliers
+- Learnt how to replace null values and few algorithms for the replacement
+  
 
