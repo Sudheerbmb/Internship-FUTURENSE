@@ -120,3 +120,8 @@
 - Revised concepts of Numpy,Pandas library
 - Learnt the concepts of Matplotlib
 - Did hands-on practice of Matplotlib
+
+### 2nd July
+- Learnt the concepts of Seaborn Library
+- Did hands-on practice of visualizations in Seaborn
+
